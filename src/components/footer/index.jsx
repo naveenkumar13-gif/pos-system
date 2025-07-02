@@ -49,7 +49,10 @@ function Footer() {
         <p className="text-[#ababab]  text-xl">more</p>
       </button>
       <button className="bg-[#f6b100] bottom-5 rounded-full p-3 items-center text-[#f5f5f5] absolute  ">
-        <FontAwesomeIcon icon={faBell} className="text-2xl hover:animate-shake"   />
+        <FontAwesomeIcon
+          icon={faBell}
+          className="text-2xl hover:animate-shake"
+        />
       </button>
     </div>
   );

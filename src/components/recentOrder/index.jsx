@@ -5,8 +5,8 @@ import { OrderList } from "../../pages/index";
 
 function RecentOrder() {
   return (
-    <div className="px-6 mt-6">
-      <div className="bg-[#0a0a0a] w-full p-5 rounded-lg h-auto">
+    <div className="px-6">
+      <div className="bg-[#0a0a0a] w-full p-5 rounded-lg  my-6">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-[#f5f5f5] text-lg font-semibold">Recent Order</h1>
           <a href="" className="text-[#f6b100] font-semibold text-sm">
@@ -21,7 +21,16 @@ function RecentOrder() {
             className="w-full p-2 rounded-md bg-transparent outline-none text-white"
           />
         </div>
-        <div className="mt-4">
+        <div className="mt-4 px-6 h-[500px]  overflow-y-scroll scrollbar-hide ">
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
           <OrderList />
         </div>
       </div>

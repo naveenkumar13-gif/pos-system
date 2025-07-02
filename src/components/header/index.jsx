@@ -24,7 +24,10 @@ function Header() {
       </div>
       <div className="flex items-center gap-4">
         <div className="bg-[#1f1f1f] rounded-full p-3">
-          <FontAwesomeIcon icon={faBell} className="text-white text-2xl" />
+          <FontAwesomeIcon
+            icon={faBell}
+            className="text-white text-2xl hover:animate-shake"
+          />
         </div>
         <div className="flex items-center gap-2 cursor-pointer">
           <FontAwesomeIcon icon={faUser} className="text-white text-2xl" />
