@@ -16,7 +16,7 @@ function MiniCard({ title, icon, number, footerNum }) {
         </button>
       </div>
       <div className="flex flex-col  gap-2 mt-5">
-        <h1 className="text-[#f5f5f5] text-3xl font-bold">{title ==="Total Earning" ? `${number}`:number }</h1>
+        <h1 className="text-[#f5f5f5] text-3xl font-bold">{title ==="Total Earning" ? `$${number}`:number }</h1>
         <h1 className="text-[#f5f5f5] text-lg">
           <span className="text-[#02ca3a]">{footerNum}%</span> than yesterday
         </h1>

@@ -11,7 +11,7 @@ function OrderCard() {
   };
   const formatTime = currentTime.toLocaleTimeString([], options);
   return (
-    <div className="w-[400px] bg-[#262626] p-4 rounded-lg shadow-lg">
+    <div className="w-full  bg-[#262626] p-4 rounded-lg shadow-lg">
       <div className="flex items-center justify-between gap-6 ">
         <div className="flex gap-4 items-center ">
           <button className="bg-[#f6b100] p-3 text-xl font-bold text-[#f5f5f5] rounded-md">
@@ -26,13 +26,13 @@ function OrderCard() {
         </div>
 
         <div className="flex items-center flex-col text-white gap-2">
-          <p className=" text-green-600 flex gap-3 items-center p-2 rounded-md">
+          <p className=" text-green-800 flex gap-3 items-center p-2 rounded-md bg-green-500">
             {" "}
             <FontAwesomeIcon icon={faCheck} />
             <span>Ready</span>
           </p>
-          <p className="text-[#ababab] text-sm  flex gap-3 items-center">
-            <FontAwesomeIcon icon={faCircle} style={{ color: "#34C759" }} />
+          <p className="text-[#ababab] text-sm  flex gap-3 items-center ">
+            <FontAwesomeIcon icon={faCircle} style={{ color: "#0fa735" }} />
             <span>Ready to serve</span>
           </p>
         </div>

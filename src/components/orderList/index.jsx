@@ -29,7 +29,7 @@ function OrderList() {
         </p>
         <p className="text-[#ababab] text-sm  flex gap-3 items-center">
           <FontAwesomeIcon icon={faCircle} style={{ color: "#34C759" }} />
-          <span>Ready to serve</span>
+          <span>Ready to server</span>
         </p>
       </div>
     </div>

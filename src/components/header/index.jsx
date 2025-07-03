@@ -6,11 +6,13 @@ import {
   faBell,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <header className="flex justify-between items-center p-4 px-8 bg-[#1a1a1a]">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate("/")}>
         <FontAwesomeIcon icon={faUtensils} className="text-white text-2xl" />
         <h1 className="text-2xl font-bold text-white">Logo</h1>
       </div>
