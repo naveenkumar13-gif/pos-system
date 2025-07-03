@@ -17,13 +17,16 @@ function PopularDish() {
               key={dish.id}
               className="flex items-center gap-4 bg-[#1f1f1f]  p-4 border border-[#1f1f1f] rounded-md  mt-2"
             >
-              <di className="w-[50px] ">
+              <h1 className="text-white text-2xl">
+                {dish.id < 10 ? `0${dish.id}` : `${dish.id}`}
+              </h1>
+              <div className="w-[50px] ">
                 <img
                   src={dish.image}
                   alt="images"
                   className="w-full rounded-md"
                 />
-              </di>
+              </div>
 
               <div className="">
                 <h1 className="text-[#f5f5f5] font-semibold">{dish.name}</h1>

@@ -7,8 +7,10 @@ import {
   faEllipsis,
   faBell,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate()
   const [apply, setApply] = useState("home");
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#262626] flex justify-around items-center p-2  ">
@@ -16,7 +18,10 @@ function Footer() {
         className={`flex gap-2 items-center  justify-center text-center p-3  ${
           apply === "home" ? "bg-[#343434] rounded-md" : ""
         }`}
-        onClick={() => setApply("home")}
+        onClick={() => {
+          setApply("home");
+          navigate("/");
+        }}
       >
         <FontAwesomeIcon icon={faHome} className="text-white mx-1" />
         <p className="text-[#ababab]  text-xl">Home</p>
@@ -25,7 +30,10 @@ function Footer() {
         className={`flex gap-2 items-center  justify-center text-center p-3  ${
           apply === "order" ? "bg-[#343434] rounded-md" : ""
         }`}
-        onClick={() => setApply("order")}
+        onClick={() => {
+          setApply("order");
+          navigate("/order");
+        }}
       >
         <FontAwesomeIcon icon={faBars} className="text-white mx-1" />
         <p className="text-[#ababab]  text-xl ">Order</p>
