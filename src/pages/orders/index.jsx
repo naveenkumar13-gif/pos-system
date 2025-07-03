@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../../components/footer";
 import OrderCard from "../../components/orderCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBackward } from "@fortawesome/free-solid-svg-icons";
-import BackButton from "../../components/backButton";
 import { BackwardOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 

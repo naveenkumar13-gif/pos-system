@@ -9,7 +9,7 @@ function RecentOrder() {
       <div className="bg-[#0a0a0a] w-full p-5 rounded-lg  my-6 ">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-[#f5f5f5] text-lg font-semibold">Recent Order</h1>
-          <a href="" className="text-[#f6b100] font-semibold text-sm">
+          <a href="/" className="text-[#f6b100] font-semibold text-sm">
             View All
           </a>
         </div>
@@ -21,7 +21,7 @@ function RecentOrder() {
             className="w-full p-2 rounded-md bg-transparent outline-none text-white"
           />
         </div>
-        <div className="mt-4 px-6 h-[calc(100vh-5rem-5rem)]  overflow-y-scroll scrollbar-hide ">
+        <div className="mt-4 px-6 h-[calc(100vh-5rem-5rem)]   scrollbar-hide ">
           <OrderList />
           <OrderList />
           <OrderList />
