@@ -12,12 +12,12 @@ function Greeting() {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
    }
-   console.log(formatDate(dateTime));
+
 
    const formatTime = (date) => {
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
    }
-   console.log(formatTime(dateTime));
+  
   return (
     <div className='flex  justify-between  mt-5 px-8 text-white '>
       <div className='flex flex-col gap-2'>
