@@ -18,7 +18,7 @@ module.exports = {
       },
       animation: {
         shake: "shake 0.5s cubic-bezier(.36,.07,.19,.97) both",
-         slideX: 'slideX 0.5s  infinite',
+         slideX: 'slideX 1s  infinite',
       },
     },
   },
