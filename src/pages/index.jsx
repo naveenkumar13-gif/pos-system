@@ -10,3 +10,4 @@ export { default as OrderList } from '../components/orderList'
 
 export  const lableStyle = 'block text-[#ababab] text-lg font-medium'
 export  const inputStyle = 'bg-[#1f1f1f] border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
+export  const heading = "text-[#f5f5f5] text-lg font-semibold tracking-wider" 

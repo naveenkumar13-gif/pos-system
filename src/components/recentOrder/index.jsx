@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { OrderList } from "../../pages/index";
@@ -21,7 +20,7 @@ function RecentOrder() {
             className="w-full p-2 rounded-md bg-transparent outline-none text-white"
           />
         </div>
-        <div className="mt-4 px-6 h-[calc(100vh-5rem-5rem)]   scrollbar-hide ">
+        <div className="mt-4 px-6 h-[500px] overflow-y-scroll  scrollbar-hide ">
           <OrderList />
           <OrderList />
           <OrderList />
