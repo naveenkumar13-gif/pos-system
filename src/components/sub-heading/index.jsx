@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { BackwardOutlined } from "@ant-design/icons";
 function SubHeading({ title, tabs = ["All", "In Progress", "Ready", "Completed"] }) {
-    const [apply, setApply] = useState(0);
-
+const [apply, setApply] = useState(0);
   const navigate = useNavigate();
   return (
         <div className="flex items-center justify-between gap-6 py-4">

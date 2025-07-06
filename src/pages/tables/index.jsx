@@ -10,7 +10,7 @@ export default function Table() {
       <SubHeading title="Tables" tabs={["All", "Booked"]} />
       <div className="grid grid-cols-3 gap-6 py-4  justify-items-center items-center scrollbar-hide h-[calc(100vh-5rem-5rem)]">
         {tables.map((table,index)=>{
-          return <TableCard key={index} tableId={table.id} status={table.status} initial={table.initial}  name={table.name} seats={table.seats} />
+          return <TableCard key={index} id={table.id} status={table.status} initial={table.initial}  name={table.name} seats={table.seats} />
         })}
       </div>
       <Footer />

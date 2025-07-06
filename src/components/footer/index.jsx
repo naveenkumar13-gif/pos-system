@@ -13,11 +13,11 @@ import { lableStyle } from "../../pages";
 import { Button } from "antd";
 import Input from "../input";
 
-function Footer() {
+function  Footer() {
+  const [apply, setApply] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  const [apply, setApply] = useState("home");
   const navItems = [
     { name: "home", label: "Home", icon: faHome, path: "/" },
     { name: "order", label: "Order", icon: faBars, path: "/order" },

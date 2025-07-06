@@ -1,11 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { heading } from "../../pages";
 import { getBgColor } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
-function TableCard({ name, status, initial, seats }) {
+function TableCard({ name, status, initial, seats, id }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (status === "Booked") return;
+    navigate("/menu");
+  };
 
   return (
-    <div className=" w-[400px] h-[200px] bg-[#262626] p-4 rounded-lg cursor-pointer shadow-md">
+    <div
+      onClick={handleClick}
+      className=" w-[400px] h-[200px] bg-[#262626] p-4 rounded-lg cursor-pointer shadow-md"
+    >
       <div className="flex items-center justify-between gap-6 ">
         <h1 className={heading}>{name}</h1>
         <div className="flex items-end flex-col text-white gap-2">

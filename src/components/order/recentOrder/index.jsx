@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { OrderList } from "../../pages/index";
+import { OrderList } from "../../../pages/index";
 
 function RecentOrder() {
   return (
