@@ -2,17 +2,21 @@ import React from "react";
 import { heading } from "../../pages";
 import { getBgColor } from "../../utils";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { updateTable } from "../../redux/customerSlice";
 
 function TableCard({ name, status, initial, seats, id }) {
   const navigate = useNavigate();
-  const handleClick = () => {
+  const dispatch = useDispatch();
+  const handleClick = (name) => {
     if (status === "Booked") return;
     navigate("/menu");
+    dispatch(updateTable({ tableNo: name }));
   };
 
   return (
     <div
-      onClick={handleClick}
+      onClick={() => handleClick(name)}
       className=" w-full bg-[#262626] p-4 rounded-lg cursor-pointer shadow-md"
     >
       <div className="flex items-center justify-between gap-6 ">

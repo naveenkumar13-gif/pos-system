@@ -5,6 +5,7 @@ const initialState = {
   guest: 0,
   tableNo: "",
 };
+console.log(initialState);
 export const customerSlice = createSlice({
   name: "customer",
   initialState: initialState,
@@ -25,3 +26,7 @@ export const customerSlice = createSlice({
     },
   },
 });
+
+export const { setCustomer, removeCustomer, updateTable } =
+  customerSlice.actions;
+export default customerSlice.reducer;
