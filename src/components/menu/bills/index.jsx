@@ -15,24 +15,24 @@ function Bills() {
       </div>
       <div className="flex items-center justify-between px-5 mt-3  gap-4">
         <Button
-          className={`bg-[#1f1f1f] hover:!bg-[#1f1f1f] hover:!text-[#f5f5f5] ${buttonStyle}`}
+          className={`bg-[#1f1f1f] hover:!bg-[#1f1f1f] hover:!text-[#f5f5f5] w-full ${buttonStyle}`}
         >
           Cash
         </Button>
         <Button
-          className={`bg-[#1f1f1f] hover:!bg-[#1f1f1f] hover:!text-[#f5f5f5] ${buttonStyle}`}
+          className={`bg-[#1f1f1f] hover:!bg-[#1f1f1f] hover:!text-[#f5f5f5]  w-full ${buttonStyle}`}
         >
           Online
         </Button>
       </div>
       <div className="flex items-center justify-between px-5 mt-3  gap-4">
         <Button
-          className={` bg-[#f6b100] hover:!bg-[#f6b100]  !text-[#ffff] ${buttonStyle}`}
+          className={` bg-[#f6b100] hover:!bg-[#f6b100]  !text-[#ffff]  w-full ${buttonStyle}`}
         >
           Print Receipt
         </Button>
         <Button
-          className={` bg-[#025cca] hover:!bg-[#025cca] hover:!text-[#f6b100]  !text-[#ffff] ${buttonStyle}`}
+          className={` bg-[#025cca] hover:!bg-[#025cca] hover:!text-[#f6b100]   w-full !text-[#ffff] ${buttonStyle}`}
         >
           Place Order
         </Button>

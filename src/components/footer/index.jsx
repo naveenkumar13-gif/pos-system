@@ -13,7 +13,7 @@ import { lableStyle } from "../../pages";
 import { Button } from "antd";
 import Input from "../input";
 
-function  Footer() {
+function Footer() {
   const [apply, setApply] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
@@ -38,7 +38,7 @@ function  Footer() {
         <button
           key={item.name}
           className={`flex gap-2 items-center justify-center text-center p-3 ${
-            apply === item.name ? "bg-[#343434] rounded-md" : ""
+            apply === item.name ? "bg-[#343434] text-white rounded-md" : ""
           }`}
           onClick={() => {
             setApply(item.name);
@@ -49,11 +49,12 @@ function  Footer() {
           <p className="text-[#ababab] text-xl">{item.label}</p>
         </button>
       ))}
-      <button className="bg-[#f6b100] bottom-5 rounded-full p-3 items-center text-[#f5f5f5] absolute">
+      <button className="bg-[#f6b100] bottom-5 rounded-full p-3 items-center text-[#f5f5f5] absolute" disabled={location.pathname === "/table"}>
         <FontAwesomeIcon
           icon={faBell}
           className="text-2xl hover:animate-shake"
           onClick={() => setIsOpen(!isOpen)}
+        
         />
       </button>{" "}
       <Model
@@ -84,7 +85,7 @@ function  Footer() {
               +
             </Button>
           </div>
-          <Button className="bg-[#f6b100] outline-none border-none text-white hover:!text-white transition-colors duration-300 text-lg !py-6 mt-6 hover:!bg-yellow-600" >
+          <Button className="bg-[#f6b100] outline-none border-none text-white hover:!text-white transition-colors duration-300 text-lg !py-6 mt-6 hover:!bg-yellow-600">
             Create Order
           </Button>
         </div>

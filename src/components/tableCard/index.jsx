@@ -13,7 +13,7 @@ function TableCard({ name, status, initial, seats, id }) {
   return (
     <div
       onClick={handleClick}
-      className=" w-[400px] h-[200px] bg-[#262626] p-4 rounded-lg cursor-pointer shadow-md"
+      className=" w-full bg-[#262626] p-4 rounded-lg cursor-pointer shadow-md"
     >
       <div className="flex items-center justify-between gap-6 ">
         <h1 className={heading}>{name}</h1>
@@ -37,6 +37,9 @@ function TableCard({ name, status, initial, seats, id }) {
           {initial}
         </h1>
       </div>
+      <p className="text-[#ababab] ">
+        Seat:<span className="text-white">{seats}</span>
+      </p>
     </div>
   );
 }

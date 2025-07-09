@@ -49,7 +49,7 @@ function Cart() {
           </div>
           <div className="flex items-center justify-between ">
             <div className="flex items-center gap-3">
-              <Ri24HoursFill className="text-[#ababab] cursor-pointer size-6" />
+              <Ri24HoursFill className="text-[#ababab] cursor-pointer size-6 w-full  " />
               <FaNotesMedical className="text-[#ababab] cursor-pointer size-6" />
             </div>
             <p className="text-[#ababab] font-semibold text-md">$123</p>

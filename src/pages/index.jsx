@@ -23,4 +23,4 @@ export const inputStyle =
 export const heading = "text-[#f5f5f5] text-lg font-semibold tracking-wider";
 
 export const buttonStyle =
-  "hover:!text-[#f5f5f5] px-4 py-3 w-full rounded-lg text-[#ababab] font-semibold !outline-none hover:!outline-none !border-none ";
+  "hover:!text-[#f5f5f5] px-4 py-3  rounded-lg text-[#ababab] font-semibold !outline-none hover:!outline-none !border-none ";

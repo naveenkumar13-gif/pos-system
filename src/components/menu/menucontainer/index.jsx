@@ -54,12 +54,12 @@ function MenuContainer() {
             key={menu.id}
             className="flex flex-col items-start justify-between p-4 rounded-lg cursor-pointer h-[150px] bg-[#2a2a2a] hover:bg-[#1a1a1a]/80 transition-all duration-300 ease-in-out"
           >
-            <div className="flex items-center justify-between w-full">
+            <div className="flex items-center justify-between  w-full">
               <h1 className="text-[#f5f5f5] text-lg font-semibold">
                 {menu.name}
               </h1>
               <Button
-                className={` w-auto bg-[#2a2a2a] hover:!bg-[#2a2a2a] ${buttonStyle}`}
+                className={`  bg-[#2a2a2a] hover:!bg-[#2a2a2a] ${buttonStyle}`}
               >
                 <FaShoppingCart className="text-[#f6b100] text-2xl" />
               </Button>
@@ -69,7 +69,7 @@ function MenuContainer() {
                 {menu.price} Rs
               </p>
 
-              <div className="flex items-center p-2 justify-between bg-[#2a2a2a]">
+              <div className="flex items-center p-2 justify-between bg-[#2a2a2a] ">
                 <Button
                   className="text-[#f6b100] text-2xl border-none bg-transparent hover:!bg-transparent hover:!text-[#f6b100]"
                   onClick={() => decreaseGuestCount(menu.id)}
