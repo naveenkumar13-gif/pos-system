@@ -15,10 +15,17 @@ function CreateOrder() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch(setCustomer({ name, phone, guest: 0 }));
-
+    dispatch(setCustomer({ name, phone, guest: count }));
     navigate("/table");
-    console.log();
+  };
+
+  const increment = () => {
+    if (count === 10) return;
+    setCount(count + 1);
+  };
+  const decrement = () => {
+    if (count === 0) return;
+    setCount(count - 1);
   };
   return (
     <div className="flex flex-col gap-4 ">
@@ -37,7 +44,7 @@ function CreateOrder() {
       <div className="flex items-center p-2 justify-between bg-[#2a2a2a]">
         <Button
           className="text-[#f6b100] text-2xl border-none bg-transparent hover:!bg-transparent hover:!text-[#f6b100]"
-          // onClick={(prev) => setCount(prev + 1)}
+          onClick={decrement}
         >
           -
         </Button>
@@ -45,10 +52,12 @@ function CreateOrder() {
           className="text-gray-100
             "
         >
-          {" "}
-          0 person{" "}
+          {count} person
         </span>
-        <Button className="text-[#f6b100] text-2xl border-none bg-transparent hover:!bg-transparent hover:!text-[#f6b100]">
+        <Button
+          className="text-[#f6b100] text-2xl border-none bg-transparent hover:!bg-transparent hover:!text-[#f6b100]"
+          onClick={increment}
+        >
           +
         </Button>
       </div>

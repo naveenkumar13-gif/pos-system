@@ -5,12 +5,14 @@ import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { BackwardOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
-
 import CustomerInfo from "../../components/menu/customerInfo";
 import Cart from "../../components/menu/cart";
 import Bills from "../../components/menu/bills";
+import { useSelector } from "react-redux";
 function Menu() {
   const navigate = useNavigate();
+  const customerData = useSelector((state) => state.customer);
+
   return (
     <section className="bg-[#1a1a1a]  flex  gap-8  border-t border-gray-50/90 px-8  ">
       <div className="flex-[3]">
@@ -32,10 +34,12 @@ function Menu() {
               />
 
               <div className="flex flex-col items-start">
-                <h1 className="text-[#f5f5f5] text-xl font-bold">
-                  Customer Name
+                <h1 className="text-[#f5f5f5] text-xl font-bold uppercase">
+                  {customerData.customerName || "Customer Name"}
                 </h1>
-                <p className="text-[#ababab] text-sm font-medium">Table No:1</p>
+                <p className="text-[#ababab] text-sm font-medium">
+                  {customerData.tableNo || "Table No"}
+                </p>
               </div>
             </div>
           </div>

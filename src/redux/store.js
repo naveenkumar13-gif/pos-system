@@ -3,7 +3,8 @@ import { customerSlice } from "./customerSlice";
 
 const store = configureStore({
   reducer: {
-    customer: customerSlice,
+    customer: customerSlice.reducer,
   },
 });
+
 export default store;
