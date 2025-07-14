@@ -30,4 +30,4 @@ export const customerSlice = createSlice({
 
 export const { setCustomer, removeCustomer, updateTable } =
   customerSlice.actions;
-export default customerSlice.reducer;
+export default customerSlice;

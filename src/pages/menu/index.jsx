@@ -46,7 +46,7 @@ function Menu() {
         </div>
         <MenuContainer />
       </div>
-      <div className="flex-[1] flex flex-col items-start  bg-[#2a2a2a]  h-[800px]">
+      <div className="flex-[1] flex flex-col items-start  bg-[#2a2a2a]  h-full py-4">
         {/* <SubHeading title="Menu" /> */}
         <CustomerInfo />
         <hr className="border-t border-[#3a3a3a] my-4  w-full" />
