@@ -1,33 +1,37 @@
 import { Button } from "antd";
 import React from "react";
-import { buttonStyle, CartStyle } from "../../../pages";
-import useSelection from "antd/es/table/hooks/useSelection";
+import { buttonStyle } from "../../../pages";
 import { useSelector } from "react-redux";
-
+import { getTotalPrice } from "../../../redux/cartSlice";
 
 function Bills() {
-  const CartData = useSelector((state) => state.cart.cart);
-
+  const CartData = useSelector((state) => state.cart);
+  const total = getTotalPrice(CartData);
   const TaxRate = 5.25;
-  // const tax = (total * TaxRate) / 100;
-  // const grandTotal = total + tax;
+  const tax = (total * TaxRate) / 100;
+  const totalPriceWithTax = total + tax;
+
   return (
     <div className="w-full">
       <div className="flex items-center justify-between px-5">
         <p className="text-xs text-[#ababab] font-medium mt-2">
           Items({CartData.length})
         </p>
-        <h1 className="text-[#f5f5f5] text-md font-bold">${3232}</h1>
+        <h1 className="text-[#f5f5f5] text-md font-bold">
+          ${total.toFixed(2)}
+        </h1>
       </div>
       <div className="flex items-center justify-between px-5 mt-1 w-full">
         <p className="text-xs text-[#ababab] font-medium mt-2">Tax(5.25%)</p>
-        <h1 className="text-[#f5f5f5] text-md font-bold">${3232}</h1>
+        <h1 className="text-[#f5f5f5] text-md font-bold">${tax.toFixed(2)}</h1>
       </div>
       <div className="flex items-center justify-between px-5 mt-1 w-full">
         <p className="text-xs text-[#ababab] font-medium mt-2">
           Total With Tax
         </p>
-        <h1 className="text-[#f5f5f5] text-md font-bold">{21}</h1>
+        <h1 className="text-[#f5f5f5] text-md font-bold">
+          {totalPriceWithTax.toFixed(2)}
+        </h1>
       </div>
       <div className="flex items-center justify-between px-5 mt-3  gap-4">
         <Button

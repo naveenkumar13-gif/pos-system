@@ -65,7 +65,7 @@ function MenuContainer() {
         ))}
       </div>
       <hr className="border-[#2a2a2a] birder-t-2 mt-4" />
-      <div className="grid grid-cols-4  py-4  gap-4 w-full">
+      <div className="grid grid-cols-4  py-4  gap-4 w-full h-[400px]">
         {slectedMenu.items.map((item) => (
           <div
             key={item.id}
